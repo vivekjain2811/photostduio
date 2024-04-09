@@ -1,0 +1,19 @@
+.imageslider {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 4s cubic-bezier(0.25,0.1,0.25,1);
+  }
+  
+  .slide {
+    min-width: 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }

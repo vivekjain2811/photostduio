@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+          -225deg,
+          #231557 0%,
+          #44107a 29%,
+          #ff1361 67%,
+          #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 60px;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="bg-cover bg-no-repeat h-16 flex items-center justify-between w-full px-4 md:px-10 py-2 md:py-4 mb-8 md:mb-12"
+      style="background-image: url(/images/grnavi.jpg)"
+    >
+      <!-- Adjust padding, margin, and other styles -->
+      <div class="flex items-center space-x-2">
+        <i class="fa-solid fa-camera text-2xl md:text-4xl"></i>
+        <!-- Adjust icon size for responsiveness -->
+        <p class="text-2xl md:text-5xl font-bold text-black">RJ CREATORS</p>
+        <!-- Adjust font size and color -->
+      </div>
+      <ul class="flex items-center space-x- text-xs lg:text-lg whitespace-pre">
+        <!-- Adjust space and font size -->
+        <li class=""><a href="#" class="hover:text-red-600">Home</a></li>
+
+        <li class="relative left-[3px] lg:left-0">
+          <a href="about.html" class="hover:text-red-600">About Us </a>
+        </li>
+        <li>
+          <a href="contact.html" class="hover:text-red-600">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!--auto image slider-->
+
+    <div
+      class="imageslider rounded-full hover:scale-105 hover:transition-delay-10000 hover:transition-delay-10000"
+    >
+      <div class="slider">
+        <div class="slide"><img src="/images/wed_1.jpg" alt="Slide 1" /></div>
+        <div class="slide"><img src="/images/wed_2.jpg" alt="Slide 2" /></div>
+        <div class="slide"><img src="/images/wed_5.jpg" alt="Slide 3" /></div>
+      </div>
+    </div>
+    <div class="aboutus">
+      <p class="text-center text-xl mt-6 text-[#44107a]">
+        "Capturing moments, framing memories, and illuminating stories – <br />
+        at our photo studio, we blend creativity with precision to immortalize
+        your most cherished moments in time."
+      </p>
+    </div>
+    <!--image wala section-->
+    <div
+      class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 mt-6"
+    >
+      <div class="w-full md:w-52 h-1 bg-[#000000]"></div>
+      <!-- Adjust width -->
+      <p class="md:text-5xl text-xl text-[#0DE6F1]">OUR SERVICES</p>
+      <!-- Adjust font sizes -->
+      <div class="w-full md:w-52 h-1 bg-[#000000]"></div>
+      <!-- Adjust width -->
+    </div>
+
+    <div
+      class="flex flex-col md:flex-row mt-6 justify-center md:justify-evenly"
+    >
+      <h1
+        class="md:mr-4 mb-4 md:mb-0 animate-charcter text-center md:text-left"
+      >
+        WEDDING
+      </h1>
+      <h2
+        class="md:mx-4 mb-4 md:mb-0 animate-charcter text-center md:text-left"
+      >
+        PRE-WEDDING
+      </h2>
+      <h3 class="md:ml-4 animate-charcter text-center md:text-left">
+        PHOTOSHOT
+      </h3>
+    </div>
+    <div class="flex flex-wrap justify-center md:justify-evenly mt-12">
+      <div
+        class="flex flex-col border border-2 w-full md:w-1/4 h-64 md:h-auto bg-cover bg-no-repeat relative justify-center items-center shadow-inner shadow-xl shadow-[#976A0B] hover:scale-125 hover:transition-all transition-shadow hover:transition-duration-1000 cursor-pointer gap-y-6 mb-6 md:mb-0 md:mr-6"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="/images/wedding.jpeg"
+          alt="Wedding Image"
+        />
+        <button
+          class="absolute bottom-4 text-white font-bold py-2 px-4 rounded-full border border-blue-500 hover:scale-125"
+        >
+          <a href="index1.html">seemore</a>
+        </button>
+      </div>
+      <div
+        class="flex flex-col border border-2 w-full md:w-1/4 h-64 md:h-auto bg-cover bg-no-repeat relative justify-center items-center shadow-inner shadow-xl shadow-[#976A0B] hover:scale-125 hover:transition-all transition-shadow duration-300 transition delay-1s cursor-pointer gap-y-6 mb-6 md:mb-0 md:mx-6"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="/images/prewedding.jpeg"
+          alt="Pre-Wedding Image"
+        />
+        <button
+          class="absolute bottom-4 text-white font-bold py-2 px-4 rounded-full border border-blue-500 hover:scale-125"
+        >
+          <a href="index2.html">seemore</a>
+        </button>
+      </div>
+      <div
+        class="flex flex-col border border-2 w-full md:w-1/4 h-64 md:h-auto bg-cover bg-no-repeat relative justify-center items-center shadow-inner shadow-xl shadow-[#976A0B] hover:scale-125 hover:transition-all transition-shadow duration-300 transition-delay-1000 cursor-pointer gap-y-6 mb-6 md:mb-0 md:ml-6"
+      >
+        <img
+          class="w-full h-full object-cover"
+          src="/images/camera.jpeg"
+          alt="Camera Image"
+        />
+        <button
+          class="absolute bottom-4 text-white font-bold py-2 px-4 rounded-full border border-blue-500 hover:scale-125"
+        >
+          <a href="index3.html">seemore</a>
+        </button>
+      </div>
+    </div>
+    <!--footer-->
+    <footer
+      class="md:rounded-tl-[125px] rounded-tl-[25px] mt-8 md:mt-12 px-16 bg-cover bg-no-repeat py-8"
+      style="background-image: url(/images/gradi.jpg)"
+    >
+      <!-- Adjust margin, padding, and background image -->
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 px-4 md:px-0"
+      >
+        <!-- Adjust column count, gap, and padding -->
+        <div class="col-span-1 md:col-span-2 flex flex-col space-y-4">
+          <!-- Adjust column span and spacing -->
+          <p class="text-sm text-white">
+            RJ CREATORS / All rights are reserved.
+          </p>
+          <!-- Adjust font size -->
+          <h2 class="text-lg font-semibold text-white">
+            MODERN INDIAN WEDDING PHOTOGRAPHY
+          </h2>
+          <p class="text-white">
+            RJ Creator is a wedding photography studio in bali ,pali Rajasthan.
+            We make modern wedding stories. Are you going to be our next muse?
+          </p>
+          <h2 class="text-lg font-semibold text-white">CONTACT</h2>
+          <p class="text-white">Email: rjcreater95@gamil.com</p>
+          <p class="text-white">Phone: +91-9928143764</p>
+        </div>
+        <div class="col-span-1 md:col-span-1 flex flex-col space-y-4">
+          <!-- Adjust column span and spacing -->
+          <h2 class="text-lg font-semibold text-white">FOLLOW RJ Creator</h2>
+          <div class="flex items-center space-x-3">
+            <a
+              href="https://www.facebook.com/profile.php?id=61558245292885&mibextid=ZbWKwL"
+            >
+              <img
+                src="images/facebook-icon.svg"
+                alt="Facebook"
+                class="w-6 cursor-pointer"
+            /></a>
+            <a href="https://www.instagram.com/rj.22_creater/"
+              ><img
+                src="images/instagram-icon.svg"
+                alt="Instagram"
+                class="w-6 cursor-pointer"
+            /></a>
+            <a href="https://x.com/22_rj72744?t=vWRtbtyzVDvQ-4wyfyEF7g&s=08"
+              ><img
+                src="images/twitter-icon.svg"
+                alt="Twitter"
+                class="w-6 cursor-pointer"
+            /></a>
+            <a href=" https://www.youtube.com/@rj.22_Creater">
+              <img
+                src="images/youtube.icon.webp"
+                alt="YouTube"
+                class="w-6 cursor-pointer"
+            /></a>
+          </div>
+        </div>
+        <div class="col-span-1 md:col-span-1 flex flex-col space-y-4">
+          <!-- Adjust column span and spacing -->
+          <p class="text-sm text-white">
+            Address: pratp chowk bali, Pali Rajasthan. BEST STUDIO IN PALI
+            RAJASTHAN
+          </p>
+          <!-- Adjust font size -->
+        </div>
+      </div>
+    </footer>
+    <!--dispaly hidden section-->
+
+    <script src="index.js"></script>
+  </body>
+</html>
